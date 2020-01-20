@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Dina Watcher](https://up.htmlacademy.ru/htmlcss/27/user/182577).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Антонова](https://htmlacademy.ru/profile/id39082).
 
 ---
 
