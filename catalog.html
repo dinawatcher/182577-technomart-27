@@ -19,8 +19,8 @@
       </div>
       <div>
         <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <p><a href="tel:+78125550555" aria-label="Телефон">+7 (812) 555-05-55</a></p>
-        <p aria-label="Адрес">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <ul>
           <li><a href="#">Равшан Джамшутович</a></li>
           <li><a href="#"><span class="visually-hidden">Выход</span></a></li>
@@ -54,6 +54,17 @@
         <form action="echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Цена:</legend>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <button class="toggle min-toggle" type="button"></button>
+              <button class="toggle max-toggle" type="button"></button>
+            </div>
+            <div class="price-controls">
+              <label class="min-price"><span class="visually-hidden">от</span> <input type="text" value="0"></label>
+              <label class="max-price"><span class="visually-hidden">до</span> <input type="text" value="30000"></label>
+            </div>
           </fieldset>
           <fieldset>
             <legend>Производители:</legend>
@@ -107,8 +118,8 @@
             <li><a href="#">По функционалу</a></li>
           </ul>
           <ul>
-            <li><a href="#">По возрастанию</a></li>
-            <li><a href="#">По убыванию</a></li>
+            <li><a href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+            <li><a href="#"><span class="visually-hidden">По убыванию</span></a></li>
           </ul>
         </div>
         <!-- К А Т А Л О Г -->
