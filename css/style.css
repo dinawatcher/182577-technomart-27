@@ -1,0 +1,327 @@
+/* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+.hide {
+  display: none;
+}
+.button {
+  text-transform: uppercase;
+}
+.button-details {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #ffffff;
+}
+
+/* ЗАГОЛОВКИ */
+
+.catalog-title, .title {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  color: #32425c;
+}
+.sub-title {
+  color: #000000;
+}
+
+
+/* ШАПКА */
+
+.main-header {
+  font-family: "Cuprum", Arial, sans-serif;
+
+  background-color: #f4f7f9;
+}
+.header-top,
+.site-nav .main-nav {
+  font-size: 17px;
+
+  background-color: #32425c;
+}
+.header-top a,
+.site-nav a {
+  color: #ffffff;
+}
+.site-logo, /* Логотип и красные "кнопки" */
+.button-details {
+  background-color: #ee3643;
+}
+.site-logo:hover,
+.button-details:hover {
+  background-color: #ca2c37;
+}
+.site-logo:active,
+.button-details:active {
+  background-color: #ba2732;
+}
+.header-search {
+  background-color: #293449;
+}
+.header-search::placeholder {
+  color: #ffffff;
+}
+.header-search:hover {
+  background-color: #212a3a;
+}
+.header-search:focus {
+  background-color: #ffffff;
+}
+.shop-menu a:hover {
+  background-color: #212a3a;
+}
+.shop-menu a:active {
+  background-color: #161d29;
+  opacity: 0.6;
+}
+.shop-menu .button-checkout {
+  text-transform: none;
+  background-color: #63a63e;
+}
+.shop-menu .button-checkout:hover {
+  background-color: #5fbb2d;
+}
+.shop-menu .button-checkout:active {
+  background-color: #518534;
+  opacity: 0.5;
+}
+.cart-full {
+  background-color: #ee3643;
+}
+.shop-info {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 23px;
+
+  color: #ee3643;
+}
+.header-tel {
+  font-size: 21px;
+  line-height: 21px;
+
+  color: #ee3643;
+}
+.header-address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+.user-menu,
+.main-nav {
+  list-style: none;
+}
+.button-profile {
+  font-size: 21px;
+  line-height: 21px;
+  text-transform: none;
+
+  color: #000000;
+  background-color: #ffffff;
+}
+.profile-logout:hover {
+  color: #ee3643;
+}
+.button-profile:active {
+  color: #000000;
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+.link-profile {
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
+
+  color: #32425c;
+}
+.link-profile:hover {
+  color: #ee3643;
+}
+.link-profile:active {
+  color: #32425c;
+  opacity: 0.3;
+}
+.main-nav a {
+  line-height: 17px;
+}
+.main-nav a:hover {
+  background-color: #1d2739;
+}
+.main-nav a:active {
+  background-color: #1d2739;
+  opacity: 0.6;
+}
+
+.breadcrumbs {
+  line-height: 18px;
+  text-transform: uppercase;
+  list-style: none;
+}
+.breadcrumbs a {
+  color: #000000;
+}
+.breadcrumbs a:hover {
+  opacity: 0.3;
+}
+
+/* ФИЛЬТР */
+
+.sidebar legend {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.filter ul {
+  list-style: none;
+}
+.filter label {
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.filter li:disabled {
+  opacity: 0.4;
+}
+.form-button {
+  line-height: 18px;
+  text-transform: uppercase;
+  
+  background-color: #ffffff;
+}
+
+/* КАРТОЧКА ТОВАРА */
+
+.cat-item h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.item-price,
+.item-sale {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+}
+.item-price {
+  text-decoration: line-through;
+
+  color: #999999;
+}
+.item-sale {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+.item-buy,
+.item-bookmark {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+.item-buy {
+  color: #ffffff;
+  background-color: #63a63e;
+}
+.item-buy:hover {
+  background-color: #5fbb2d;
+}
+.item-buy:active {
+  background-color: #518534;
+}
+.item-bookmark {
+  color: #32425c;
+  border: 3px solid #63a63e;
+}
+.item-bookmark:hover {
+  border: 3px solid #32425c;
+}
+.item-bookmark:active {
+  border: 3px solid #32425c;
+  opacity: 0.3;
+}
+
+.delivery-companies {
+  list-style: none;
+}
+.delivery-companies li {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/* ФУТЕР */
+
+.main-footer {
+  font-family: "Cuprum", Arial, sans-serif;
+}
+.footer-top {
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #ffffff;
+  background-color: #32425c;
+}
+.footer-nav,
+.footer-promo,
+.social-button {
+  list-style: none;
+}
+.footer-tel,
+.footer-nav a,
+.footer-bottom a {
+  color: #ffffff;
+}
+.footer-promo a,
+.footer-bottom .academy {
+  color: #ffd180;
+}
+.footer-nav a:hover,
+.footer-promo a:hover,
+.academy:hover {
+  text-decoration: underline;
+}
+.footer-nav a:active,
+.footer-promo a:active {
+  opacity: 0.5;
+}
+.footer-bottom {
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #ffffff;
+  background-color: #293449;
+}
+.academy:active {
+  text-decoration: none;
+  color: #ee3643;
+}
