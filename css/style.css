@@ -39,6 +39,11 @@ a {
 
   color: #ffffff;
 }
+.new-flag {
+  text-transform: lowercase;
+  color: #ffffff;
+  background-color: #ee3643;
+}
 
 /* ЗАГОЛОВКИ */
 
@@ -216,7 +221,7 @@ a {
 .form-button {
   line-height: 18px;
   text-transform: uppercase;
-  
+
   background-color: #ffffff;
 }
 
