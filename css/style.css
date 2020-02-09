@@ -199,6 +199,10 @@ a {
   opacity: 0.3;
 }
 
+.section-header {
+  background-color: #f9f5f0;
+}
+
 /* ФИЛЬТР */
 
 .sidebar legend {
@@ -223,6 +227,65 @@ a {
   text-transform: uppercase;
 
   background-color: #ffffff;
+}
+
+/* ПРОМО БЛОКИ */
+
+.promo-block h3 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+
+  color: #ffffff;
+}
+.promo-materials {
+  background-color: #ffbf47;
+}
+.promo-tool {
+  background-color: #3bbce3;
+}
+.promo-tech {
+  background-color: #dc91d8;
+}
+.promo-sale {
+  background-color: #8ed78f;
+}
+.promo-delivery {
+  background-color: #ffc047;
+}
+.button-promo {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.button-promo:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.button-promo:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* СЛАЙДЕР */
+.slider {
+  background-color: #604f48;
+}
+.slider h3 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.slider p {
+  font-size: 18px;
+
+  color: #ffffff;
 }
 
 /* КАРТОЧКА ТОВАРА */
@@ -282,6 +345,37 @@ a {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
+}
+
+/* ПРОИЗВОДИТЕЛИ */
+
+.brand-list {
+  list-style: none;
+}
+.brand-name {
+  background-color: #ffffff;
+}
+
+/* СЕРВИСЫ */
+
+.service-section {
+  background-color: #f4f7f9;
+}
+.service-list {
+  list-style: none;
+}
+.service-item {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+
+  color: #ffffff;
+  background-color: #32425c;
+}
+.item-checked {
+  color: #32425c;
+  background-color: #ffffff;
 }
 
 /* ФУТЕР */
