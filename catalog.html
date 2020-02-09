@@ -11,14 +11,14 @@
     <header class="main-header">
       <div class="header-top">
         <a class="site-logo" href="index.html"><img src="img/logo.svg" alt="Логотип компании" width="109" height="19"></a>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="search">Поиск</label>
-          <input class="header-search" type="search" id="search" name="search" placeholder="Поиск:">
-          <button type="submit">Искать</button>
+          <input type="search" id="search" name="search" placeholder="Поиск:">
+          <button type="submit"><span class="visually-hidden">Искать</span></button>
         </form>
         <div class="shop-menu">
           <a href="#">Закладки: 0</a>
-          <a class="cart-full" href="#">Корзина: 10</a>
+          <a class="added" href="#">Корзина: 10</a>
           <a class="button button-checkout" href="#">Оформить заказ</a>
         </div>
       </div>
@@ -282,7 +282,7 @@
       </div>
     </footer>
 
-    <section class="cart-add hide">
+    <section class="cart-add modal">
       <h2>Товар добавлен в корзину!</h2>
       <div>
         <a href="#">Оформить заказ</a>

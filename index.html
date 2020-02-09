@@ -11,9 +11,9 @@
   <header class="main-header">
     <div class="header-top">
       <a class="site-logo" href="#"><img src="img/logo.svg" alt="Логотип компании Техномарт" width="109" height="19"></a>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
         <label class="visually-hidden" for="search">Поиск</label>
-        <input class="header-search" type="search" id="search" name="search" placeholder="Поиск:">
+        <input type="search" id="search" name="search" placeholder="Поиск:">
         <button type="submit"><span class="visually-hidden">Искать</span></button>
       </form>
       <div class="shop-menu">
@@ -27,8 +27,8 @@
       <p><a class="header-tel" href="tel:+78125550555" aria-label="Позвоните нам">+7 (812) 555-05-55</a></p>
       <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       <ul class="user-menu">
-        <li><a class="button button-profile profile-logout" href="#">Войти</a></li>
-        <li><a class="button button-profile profile-logout" href="#">Регистрация</a></li>
+        <li><a class="button button-profile" href="#">Войти</a></li>
+        <li><a class="button button-profile" href="#">Регистрация</a></li>
       </ul>
     </div>
     <nav class="site-nav">
@@ -260,7 +260,7 @@
     </div>
   </footer>
 
-  <section class="hide">
+  <section class="modal">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
       <div>
@@ -279,7 +279,7 @@
       <span class="visually-hidden">Закрыть</span>
     </button>
   </section>
-  <section class="hide">
+  <section class="modal">
     <h2 class="visually-hidden">Карта проезда</h2>
     <img src="img/map-popup.jpg" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="940" height="446">
     <button type="button">

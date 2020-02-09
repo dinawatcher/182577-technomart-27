@@ -26,7 +26,7 @@ body {
 a {
   text-decoration: none;
 }
-.hide {
+.modal {
   display: none;
 }
 .button {
@@ -90,16 +90,16 @@ a {
 .button-details:active {
   background-color: #ba2732;
 }
-.header-search {
+.header-search input {
   background-color: #293449;
 }
-.header-search::placeholder {
+.header-search input::placeholder {
   color: #ffffff;
 }
-.header-search:hover {
+.header-search input:hover {
   background-color: #212a3a;
 }
-.header-search:focus {
+.header-search input:focus {
   background-color: #ffffff;
 }
 .shop-menu a:hover {
@@ -120,7 +120,7 @@ a {
   background-color: #518534;
   opacity: 0.5;
 }
-.cart-full {
+.added {
   background-color: #ee3643;
 }
 .shop-info {
@@ -154,7 +154,7 @@ a {
   color: #000000;
   background-color: #ffffff;
 }
-.profile-logout:hover {
+.button-profile:hover {
   color: #ee3643;
 }
 .button-profile:active {
@@ -162,6 +162,10 @@ a {
   background-color: #ffffff;
   opacity: 0.3;
 }
+.profile-login:hover {
+  color: #000000;
+}
+
 .link-profile {
   font-size: 16px;
   line-height: 18px;
