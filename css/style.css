@@ -59,7 +59,17 @@ a {
 .sub-title {
   color: #000000;
 }
+.catalog-title {
+  background-color: #f2f6f8;
+}
+.filter-title {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
 
+  background-color: #f7f3ec;
+}
 
 /* ШАПКА */
 
@@ -232,6 +242,11 @@ a {
 
   background-color: #ffffff;
 }
+.range-controls,
+.price-controls input[type="text"]
+ {
+  background-color: #f9f5f0;
+}
 
 /* ПРОМО БЛОКИ */
 
@@ -290,6 +305,35 @@ a {
   font-size: 18px;
 
   color: #ffffff;
+}
+
+/* СОРТИРОВКА */
+
+.sorting-block {
+  background-color: #f7f3ec;
+}
+
+.sorting-block span,
+.sorting-block a {
+  text-transform: uppercase;
+}
+.sorting-list,
+.sorting-buttons {
+  list-style: none;
+}
+.sorting-list a {
+  color: rgba(0, 0, 0, 0.18);
+  border-bottom: 1px dotted #ee3643;
+}
+.sorting-list a:hover {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+.sorting-list .sort-active {
+  color: #ee3643;
+  border: none;
+
+  pointer-events: none;
 }
 
 /* КАРТОЧКА ТОВАРА */
@@ -377,9 +421,50 @@ a {
   color: #ffffff;
   background-color: #32425c;
 }
+.service-item:hover {
+  background-color: #293449;
+}
 .item-checked {
   color: #32425c;
   background-color: #ffffff;
+
+  pointer-events: none;
+}
+.service-section h3 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: uppercase;
+
+  color: #32425c;
+}
+
+/* ПАГИНАЦИЯ */
+
+.pagination {
+  list-style: none;
+}
+
+.pagination a {
+  line-height: 18px;
+  text-transform: uppercase;
+
+  color: #000000;
+  border: solid 1px #e5e5e5;
+}
+
+.pagination a:hover {
+  border: 1px solid #bdc6ca;
+}
+.pagination a:active {
+  border: 1px solid #ee3643;
+}
+.pagination .active-page {
+  color: #ffffff;
+  background-color: #ee3643;
+
+  pointer-events: none;
 }
 
 /* ФУТЕР */
