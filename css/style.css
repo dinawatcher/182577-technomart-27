@@ -1,17 +1,12 @@
-/* .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0)
-} */
-
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 body {
-  margin: 0;
   padding: 0;
+  margin: 0;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -22,9 +17,22 @@ body {
 
   background-color: #ffffff;
 }
-
 a {
   text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
 }
 .modal {
   display: none;
@@ -40,6 +48,7 @@ a {
   color: #ffffff;
 }
 .new-flag {
+  position: absolute;
   text-transform: lowercase;
   color: #ffffff;
   background-color: #ee3643;
@@ -56,11 +65,11 @@ a {
 
   color: #32425c;
 }
-.sub-title {
-  color: #000000;
-}
 .catalog-title {
   background-color: #f2f6f8;
+}
+.sub-title {
+  color: #000000;
 }
 .filter-title {
   font-size: 13px;
@@ -74,19 +83,32 @@ a {
 /* ШАПКА */
 
 .main-header {
+  padding-bottom: 60px;
   font-family: "Cuprum", Arial, sans-serif;
 
   background-color: #f4f7f9;
 }
+.catalog-header {
+  margin-bottom: 0;
+}
+
+.header-top .container {
+  display: flex;
+}
+
 .header-top,
 .site-nav .main-nav {
   font-size: 17px;
 
   background-color: #32425c;
 }
+
 .header-top a,
 .site-nav a {
   color: #ffffff;
+}
+.site-logo {
+  width: 220px;
 }
 .site-logo, /* Логотип и красные "кнопки" */
 .button-details {
@@ -101,16 +123,26 @@ a {
   background-color: #ba2732;
 }
 .header-search input {
-  background-color: #293449;
+  width: 270px;
+  border: none;
+  background-color: #32425c;
 }
 .header-search input::placeholder {
   color: #ffffff;
+  opacity: 1;
 }
 .header-search input:hover {
   background-color: #212a3a;
 }
 .header-search input:focus {
   background-color: #ffffff;
+}
+.shop-menu {
+  display: flex;
+}
+.shop-menu a {
+  display: block;
+  width: 150px;
 }
 .shop-menu a:hover {
   background-color: #212a3a;
@@ -133,13 +165,38 @@ a {
 .added {
   background-color: #ee3643;
 }
+
+.header-bottom {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.header-bottom .container {
+  display: flex;
+  align-items: center;
+}
 .shop-info {
+  width: 200px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 70px;
+
   font-size: 16px;
   font-weight: 400;
   font-style: italic;
   line-height: 23px;
 
   color: #ee3643;
+}
+.header-contacts {
+  width: 270px;
+  margin-right: 70px;
+}
+.header-contacts p {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
 }
 .header-tel {
   font-size: 21px;
@@ -151,6 +208,20 @@ a {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+}
+.user-menu {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.button-login {
+  width: 120px;
+  margin-right: 10px;
+}
+.button-registration {
+  width: 150px;
 }
 .user-menu,
 .main-nav {
@@ -190,7 +261,19 @@ a {
   color: #32425c;
   opacity: 0.3;
 }
+
+/* ГЛАВНАЯ НАВИГАЦИЯ */
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .main-nav a {
+  display: block;
+  padding: 15px;
   line-height: 17px;
 }
 .main-nav a:hover {
@@ -201,7 +284,16 @@ a {
   opacity: 0.6;
 }
 
+.main-page {
+  padding-top: 60px;
+}
+
 .breadcrumbs {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   line-height: 18px;
   text-transform: uppercase;
   list-style: none;
@@ -212,13 +304,20 @@ a {
 .breadcrumbs a:hover {
   opacity: 0.3;
 }
-
 .section-header {
   background-color: #f9f5f0;
 }
 
 /* ФИЛЬТР */
 
+.filter fieldset {
+  border: none;
+}
+.filter ul {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .sidebar legend {
   font-size: 17px;
   font-weight: 700;
@@ -250,6 +349,26 @@ a {
 
 /* ПРОМО БЛОКИ */
 
+.promo-section {
+  padding-bottom: 53px;
+}
+.promo-section .container {
+  display: flex;
+  justify-content: space-between;
+}
+.left-column-promo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.right-column-promo {
+  display: flex;
+  flex-direction: column;
+}
+.promo-block {
+  width: 300px;
+  margin-bottom: 20px;
+}
 .promo-block h3 {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 24px;
@@ -290,6 +409,7 @@ a {
 
 /* СЛАЙДЕР */
 .slider {
+  width: 620px;
   background-color: #604f48;
 }
 .slider h3 {
@@ -306,13 +426,24 @@ a {
 
   color: #ffffff;
 }
+.second-slide {
+  display: none;
+}
 
 /* СОРТИРОВКА */
 
 .sorting-block {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
   background-color: #f7f3ec;
 }
-
+.sorting-block ul {
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .sorting-block span,
 .sorting-block a {
   text-transform: uppercase;
@@ -336,18 +467,61 @@ a {
   pointer-events: none;
 }
 
+.inner-wrapper {
+  display: flex;
+}
+.sidebar {
+  width: 220px;
+  margin-right: 20px;
+}
+.main-section {
+  width: 700px;
+}
+.catalog-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.goods-section .section-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.goods-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* КАРТОЧКА ТОВАРА */
 
+.cat-item {
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #eaeaea;
+}
+.cat-item-main:nth-child(4n) {
+  margin-right: 0;
+}
+.cat-item-inner:nth-child(3n) {
+  margin-right: 0;
+}
 .cat-item h3 {
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
+  text-align: center;
 }
 .item-price,
 .item-sale {
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
+  text-align: center;
 }
 .item-price {
   text-decoration: line-through;
@@ -357,6 +531,9 @@ a {
 .item-sale {
   color: #ffffff;
   background-color: #ee3643;
+}
+.buy-popup {
+  display: none;
 }
 .item-buy,
 .item-bookmark {
@@ -386,33 +563,66 @@ a {
   opacity: 0.3;
 }
 
-.delivery-companies {
-  list-style: none;
-}
-.delivery-companies li {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 20px;
-}
-
 /* ПРОИЗВОДИТЕЛИ */
 
+.brand-section {
+  padding-bottom: 85px;
+}
+.brand-section .section-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
 .brand-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   list-style: none;
 }
-.brand-name {
+.brand-list li {
+  width: 220px;
+  height: 145px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #eaeaea;
+}
+.brand-list li:nth-of-type(4n) {
+  margin-right: 0;
+}
+.brand-link {
+  display: block;
   background-color: #ffffff;
 }
 
 /* СЕРВИСЫ */
 
 .service-section {
+  padding-top: 68px;
   background-color: #f4f7f9;
 }
+.service-top .title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.service-top p {
+  width: 400px;
+}
+.service-bottom {
+  display: flex;
+  padding-bottom: 100px;
+}
 .service-list {
+  width: 240px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 80px;
   list-style: none;
 }
 .service-item {
+  display: block;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   font-weight: 700;
@@ -430,6 +640,20 @@ a {
 
   pointer-events: none;
 }
+.service-delivery {
+  width: 275px;
+}
+.service-delivery h3 {
+  padding: 0;
+  margin: 0;
+}
+.service-delivery p {
+  margin: 0;
+}
+.service-guarantee,
+.service-credit {
+  display: none;
+}
 .service-section h3 {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
@@ -440,12 +664,35 @@ a {
   color: #32425c;
 }
 
+.company-block.container {
+  display: flex;
+  padding-top: 82px;
+  padding-bottom: 86px;
+}
+.about-section .title,
+.contacts-section .title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* ПАГИНАЦИЯ */
 
 .pagination {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  padding-top: 56px;
+  padding-bottom: 60px;
+  margin-top: 0;
+  margin-bottom: 0;
   list-style: none;
 }
-
+.pagination li {
+  margin-right: 10px;
+}
+.pagination li:last-child {
+  margin-right: 0;
+}
 .pagination a {
   line-height: 18px;
   text-transform: uppercase;
@@ -467,6 +714,29 @@ a {
   pointer-events: none;
 }
 
+.about-drill-section {
+  background-color: #f4f7f9;
+}
+.about-drill-section .title,
+.about-drill-section p {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.about-drill-section .container {
+  padding-top: 67px;
+  padding-bottom: 73px;
+}
+
+.delivery-companies {
+  list-style: none;
+}
+.delivery-companies li {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+}
+
 /* ФУТЕР */
 
 .main-footer {
@@ -478,6 +748,27 @@ a {
 
   color: #ffffff;
   background-color: #32425c;
+}
+.footer-top .container {
+  display: flex;
+}
+.footer-nav {
+  display: flex;
+}
+.footer-nav li {
+  margin-right: 60px;
+}
+.footer-nav li:last-child {
+  margin-right: 0;
+}
+.footer-promo {
+  display: flex;
+}
+.footer-promo li {
+  margin-right: 60px;
+}
+.footer-promo li:last-child {
+  margin-right: 0;
 }
 .footer-nav,
 .footer-promo,
@@ -503,11 +794,20 @@ a {
   opacity: 0.5;
 }
 .footer-bottom {
+  padding-top: 39px;
+  padding-bottom: 35px;
   font-size: 16px;
   line-height: 18px;
 
   color: #ffffff;
   background-color: #293449;
+}
+.footer-bottom .container {
+  display: flex;
+}
+.footer-bottom p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .academy:active {
   text-decoration: none;
