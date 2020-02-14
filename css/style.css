@@ -210,17 +210,20 @@ a {
   color: #32425c;
 }
 .user-menu {
-  display: flex;
-  align-items: center;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
+}
+.button-profile {
+  display: inline-block;
+  vertical-align: top;
 }
 .button-login {
   width: 120px;
   margin-right: 10px;
 }
 .button-registration {
+  display: inline-block;
   width: 150px;
 }
 .user-menu,
@@ -714,6 +717,8 @@ a {
   pointer-events: none;
 }
 
+/* О ПЕРФОРАТОРАХ */
+
 .about-drill-section {
   background-color: #f4f7f9;
 }
@@ -727,6 +732,8 @@ a {
   padding-top: 67px;
   padding-bottom: 73px;
 }
+
+/* О КОМПАНИИ */
 
 .delivery-companies {
   list-style: none;
