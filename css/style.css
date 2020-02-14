@@ -210,13 +210,12 @@ a {
   color: #32425c;
 }
 .user-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
-}
-.button-profile {
-  display: inline-block;
-  vertical-align: top;
 }
 .button-login {
   width: 120px;
@@ -308,6 +307,10 @@ a {
   opacity: 0.3;
 }
 .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
   background-color: #f9f5f0;
 }
 
@@ -362,11 +365,12 @@ a {
 .left-column-promo {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  width: 620px;
 }
 .right-column-promo {
   display: flex;
   flex-direction: column;
+  width: 300px;
 }
 .promo-block {
   width: 300px;
@@ -381,6 +385,7 @@ a {
   color: #ffffff;
 }
 .promo-materials {
+  margin-right: 20px;
   background-color: #ffbf47;
 }
 .promo-tool {
@@ -429,17 +434,22 @@ a {
 
   color: #ffffff;
 }
-.second-slide {
+.slide {
   display: none;
 }
-
+.slide-active {
+  display: block;
+}
 /* СОРТИРОВКА */
 
 .sorting-block {
   display: flex;
-  justify-content: space-around;
+  padding: 0 17px;
   margin-bottom: 20px;
   background-color: #f7f3ec;
+}
+.sorting-block span {
+  margin-right: 140px;
 }
 .sorting-block ul {
   display: flex;
@@ -454,6 +464,12 @@ a {
 .sorting-list,
 .sorting-buttons {
   list-style: none;
+}
+.sorting-list li {
+  margin-right: 65px;
+}
+.sorting-list li:last-child {
+  margin-right: 0;
 }
 .sorting-list a {
   color: rgba(0, 0, 0, 0.18);
@@ -485,11 +501,6 @@ a {
   flex-wrap: wrap;
 }
 
-.goods-section .section-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
 .goods-list {
   display: flex;
   flex-wrap: wrap;
@@ -643,19 +654,19 @@ a {
 
   pointer-events: none;
 }
-.service-delivery {
-  width: 275px;
+.service-slide {
+  display: none;
+  width: 630px;
 }
-.service-delivery h3 {
+.service-slide h3 {
   padding: 0;
   margin: 0;
 }
-.service-delivery p {
+.service-slide p {
   margin: 0;
 }
-.service-guarantee,
-.service-credit {
-  display: none;
+.service-slide-active {
+  display: block;
 }
 .service-section h3 {
   font-family: "Cuprum", Arial, sans-serif;
