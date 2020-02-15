@@ -487,7 +487,6 @@ a {
 }
 .sorting-buttons li {
   width: 32px;
-  outline: 1px solid red; /*временно*/
 }
 
 .inner-wrapper {
