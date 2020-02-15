@@ -360,12 +360,13 @@ a {
 }
 .promo-section .container {
   display: flex;
-  justify-content: space-between;
 }
 .left-column-promo {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 620px;
+  margin-right: 20px;
 }
 .right-column-promo {
   display: flex;
@@ -385,7 +386,7 @@ a {
   color: #ffffff;
 }
 .promo-materials {
-  margin-right: 20px;
+
   background-color: #ffbf47;
 }
 .promo-tool {
@@ -444,12 +445,13 @@ a {
 
 .sorting-block {
   display: flex;
-  padding: 0 17px;
+  padding-left: 18px;
+  padding-right: 7px;
   margin-bottom: 20px;
   background-color: #f7f3ec;
 }
 .sorting-block span {
-  margin-right: 140px;
+  margin-right: auto;
 }
 .sorting-block ul {
   display: flex;
@@ -466,10 +468,8 @@ a {
   list-style: none;
 }
 .sorting-list li {
-  margin-right: 65px;
-}
-.sorting-list li:last-child {
-  margin-right: 0;
+  margin-right: 33px;
+  margin-left: 33px;
 }
 .sorting-list a {
   color: rgba(0, 0, 0, 0.18);
@@ -484,6 +484,10 @@ a {
   border: none;
 
   pointer-events: none;
+}
+.sorting-buttons li {
+  width: 32px;
+  outline: 1px solid red; /*временно*/
 }
 
 .inner-wrapper {
