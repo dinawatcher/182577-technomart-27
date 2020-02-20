@@ -166,7 +166,7 @@ img {
 .header-search:hover svg {
   opacity: 1;
 }
-.header-search:focus path {
+.header-search:focus path { /* active работает, focus нет */
   fill: #ee3643;
 }
 .header-search input {
@@ -731,7 +731,7 @@ img {
   position: relative;
   overflow: hidden;
   width: 300px;
-  height: 123px; /* временно */
+  height: 123px; /* временно? без высот все разъезжается */
   padding-bottom: 9px;
   margin-bottom: 20px;
   margin-right: 20px;
