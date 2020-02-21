@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт - Каталог - Перфораторы</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -14,13 +13,16 @@
         <div class="container">
           <a class="site-logo" href="index.html"><img src="img/logo.svg" alt="Логотип компании" width="109" height="19"></a>
           <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="search">Поиск</label>
             <input type="search" id="search" name="search" placeholder="Поиск:">
+            <label class="header-search-label" for="search">
+              <span class="visually-hidden">Поиск</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+            </label>
             <button class="visually-hidden" type="submit"><span>Искать</span></button>
           </form>
           <div class="shop-menu">
-            <a class="shop-menu-bookmark" href="#">Закладки: 0</a>
-            <a class="shop-menu-cart added" href="#">Корзина: 10</a>
+            <a class="shop-menu-link bookmark-link" href="#">Закладки: 0</a>
+            <a class="shop-menu-link cart-link added" href="#">Корзина: 10</a>
             <a class="button button-checkout" href="#">Оформить заказ</a>
           </div>
         </div>
@@ -66,7 +68,7 @@
           <li><a class="home-link" href="index.html"><span class="visually-hidden">Домой</span></a></li>
           <li><a href="#">Каталог</a></li>
           <li><a href="#">Инструмент</a></li>
-          <li><a class="not-active" href="#">Перфораторы</a></li>
+          <li><a>Перфораторы</a></li>
         </ul>
         <h1 class="catalog-title">Перфораторы</h1>
         <!-- Ф И Л Ь Т Р -->
@@ -80,8 +82,8 @@
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <div class="toggle min-toggle"></div>
-                  <div class="toggle max-toggle"></div>
+                  <button class="toggle min-toggle" type="button"></button>
+                  <button class="toggle max-toggle" type="button"></button>
                 </div>
                 <div class="price-controls">
                   <label class="min-price"><span class="visually-hidden">от</span> <input type="text" value="0"></label>
@@ -93,24 +95,39 @@
                 <legend>Производители:</legend>
                 <ul>
                   <li class="filter-options">
-                    <input class="visually-hidden filter-checkbox" type="checkbox" id="bosch" name="bosch" checked>
-                    <label for="bosch">Bosch</label>
+                    <label class="filter-label">
+                      <input class="visually-hidden" type="checkbox" name="bosch" checked>
+                      <span class="filter-checkbox"></span>
+                      Bosch
+                    </label>
                   </li>
                   <li class="filter-options">
-                    <input class="visually-hidden filter-checkbox" type="checkbox" id="interskol" name="interskol">
-                    <label for="interskol">Интерскол</label>
+                    <label class="filter-label">
+                      <input class="visually-hidden" type="checkbox" name="interskol">
+                      <span class="filter-checkbox"></span>
+                      Интерскол
+                    </label>
                   </li>
                   <li class="filter-options">
-                    <input class="visually-hidden filter-checkbox" type="checkbox" id="makita" name="makita" checked>
-                    <label for="makita">Makita</label>
+                    <label class="filter-label">
+                      <input class="visually-hidden" type="checkbox" name="makita" checked>
+                      <span class="filter-checkbox"></span>
+                      Makita
+                    </label>
                   </li>
                   <li class="filter-options">
-                    <input class="visually-hidden filter-checkbox" type="checkbox" id="dewalt" name="dewalt">
-                    <label for="dewalt">Dewalt</label>
+                    <label class="filter-label">
+                      <input class="visually-hidden" type="checkbox" name="dewalt">
+                      <span class="filter-checkbox"></span>
+                      Dewalt
+                    </label>
                   </li>
                   <li class="filter-options">
-                    <input class="visually-hidden filter-checkbox" type="checkbox" id="hitachi" name="hitachi">
-                    <label for="hitachi">Hitachi</label>
+                    <label class="filter-label">
+                      <input class="visually-hidden" type="checkbox" name="hitachi">
+                      <span class="filter-checkbox"></span>
+                      Hitachi
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -118,12 +135,18 @@
                 <legend>Питание:</legend>
                 <ul>
                   <li class="filter-options">
-                    <input class="visually-hidden filter-radio" type="radio" id="battery" name="power" checked>
-                    <label for="battery">Аккумуляторные</label>
+                    <label class="filter-label">
+                      <input class="visually-hidden" type="radio" name="power" value="battery" checked>
+                      <span class="filter-radio"></span>
+                      Аккумуляторные
+                    </label>
                   </li>
                   <li class="filter-options">
-                    <input class="visually-hidden filter-radio" type="radio" id="network" name="power">
-                    <label for="network">Сетевые</label>
+                    <label class="filter-label">
+                      <input class="visually-hidden" type="radio" name="power" value="power">
+                      <span class="filter-radio"></span>
+                      Сетевые
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -301,11 +324,11 @@
             <li class="social-button fb-button"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
             <li class="social-button insta-button"><a href="#"><span class="visually-hidden">Инстаграм</span></a></li>
           </ul>
-          <p class="feedback">
+          <p class="footer-bottom-contacts">
             Обратная связь:
             <a class="academy" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
-          <p class="designed">
+          <p class="footer-bottom-contacts">
             Разработано —
             <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
