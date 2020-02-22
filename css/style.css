@@ -58,17 +58,16 @@ img {
 .new-flag {
   position: absolute;
   z-index: 20;
-  top: 0;
-  right: -33px;
-  width: 120px;
+  top: 5px;
+  right: -21px;
+  width: 80px;
   padding-bottom: 3px;
-  padding-left: 18px;
   transform: rotate(45deg);
   text-align: center;
   text-transform: lowercase;
   color: #ffffff;
   background-color: #ee3643;
-  overflow: hidden;
+  cursor: default;
 }
 
 /* ЗАГОЛОВКИ */
