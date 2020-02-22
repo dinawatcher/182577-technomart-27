@@ -413,6 +413,7 @@ input:focus + .header-search-label path {
   fill: #c5c5c5;
 }
 .profile-menu {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   width: inherit;
@@ -437,6 +438,15 @@ input:focus + .header-search-label path {
 .link-profile:active {
   color: #32425c;
   opacity: 0.3;
+}
+.profile-menu li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  width: 4px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #32425c;
 }
 /* ГЛАВНАЯ НАВИГАЦИЯ */
 
