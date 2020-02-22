@@ -94,11 +94,9 @@ img {
   color: #000000;
 }
 .filter-title {
-  padding-top: 11px;
-  padding-bottom: 10px;
-  padding-left: 19px;
+  padding: 9px 10px 10px 19px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 12px;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -556,6 +554,7 @@ input:focus + .header-search-label path {
 
 .filter fieldset {
   padding: 0;
+  padding-bottom: 24px;
   margin: 0;
   border: none;
   border-bottom: 1px solid #eaeaea;
@@ -566,15 +565,11 @@ input:focus + .header-search-label path {
   margin-bottom: 0;
 }
 .filter legend {
-  padding-top: 25px;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
-}
-.filter legend:first-of-type {
-  padding-top: 11px;
 }
 .filter ul {
   list-style: none;
@@ -584,24 +579,20 @@ input:focus + .header-search-label path {
   line-height: 20px;
   text-transform: uppercase;
 }
-.filter li:disabled {
-  opacity: 0.4;
-}
 .form-button {
   line-height: 18px;
   text-transform: uppercase;
-
   background-color: #ffffff;
 }
 .filter .filter-price {
-  padding-bottom: 25px;
+  margin-bottom: 17px;
 }
 .range-controls {
   position: relative;
   height: 80px;
-  padding: 0 30px;
-  padding-top: 38px;
-  margin-bottom: 8px;
+  padding: 39px 20px;
+  margin-bottom: 9px;
+  border-radius: 4px;
 }
 .scale {
   height: 2px;
@@ -639,10 +630,9 @@ input:focus + .header-search-label path {
 }
 .price-controls input[type="text"] {
   width: 95px;
-  padding: 0;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding: 11px;
   border: none;
+  border-radius: 4px;
   text-align: center;
   font-family: inherit;
 }
@@ -652,10 +642,13 @@ input:focus + .header-search-label path {
   background-color: #f9f5f0;
 }
 .filter .brand-filter {
-  margin-top: 5px;
+  margin-bottom: 11px;
 }
 .filter-options {
   margin-bottom: 16px;
+}
+.filter-options:last-child {
+  margin-bottom: 0;
 }
 .filter-label {
   position: relative;
@@ -664,7 +657,7 @@ input:focus + .header-search-label path {
 }
 .filter-checkbox {
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 0;
   width: 27px;
   height: 23px;
@@ -680,13 +673,20 @@ input:hover + .filter-checkbox {
 input:hover:checked + .filter-checkbox {
   background-image: url("../img/checkbox-on-hover.svg");
 }
+input:disabled + .filter-checkbox {
+  background-image: url("../img/checkbox-off-hover.svg");
+  opacity: 0.3;
+}
+input:checked:disabled + .filter-checkbox {
+  background-image: url("../img/checkbox-on-hover.svg");
+}
 .filter .power-filter {
-  margin-top: 8px;
-  margin-bottom: 59px;
+  border-bottom: none;
+  margin-bottom: 53px;
 }
 .filter-radio {
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 0;
   width: 25px;
   height: 25px;
@@ -700,6 +700,13 @@ input:hover + .filter-radio {
   background-image: url("../img/radio-off-hover.svg");
 }
 input:hover:checked + .filter-radio {
+  background-image: url("../img/radio-on-hover.svg");
+}
+input:disabled + .filter-radio {
+  background-image: url("../img/radio-off-hover.svg");
+  opacity: 0.3;
+}
+input:checked:disabled + .filter-radio {
   background-image: url("../img/radio-on-hover.svg");
 }
 .form-button {
