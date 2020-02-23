@@ -160,6 +160,14 @@ img {
   color: #ffffff;
   opacity: 1;
 }
+.header-search :-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+.header-search :hover:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
 .header-search input:hover {
   color: #000000;
   background-color: #212a3a;
