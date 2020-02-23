@@ -39,9 +39,6 @@ img {
   padding: 0 10px;
   margin: 0 auto;
 }
-.modal {
-  display: none;
-}
 .button {
   text-transform: uppercase;
 }
@@ -58,9 +55,9 @@ img {
 .new-flag {
   position: absolute;
   z-index: 20;
-  top: 5px;
-  right: -21px;
-  width: 80px;
+  top: 6px;
+  right: -30px;
+  width: 100px;
   padding-bottom: 3px;
   transform: rotate(45deg);
   text-align: center;
@@ -201,7 +198,7 @@ input:focus + .header-search-label path {
   width: 150px;
   padding-top: 9px;
   padding-right: 8px;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 }
 .shop-menu-link:hover {
   background-color: #212a3a;
@@ -219,7 +216,7 @@ input:focus + .header-search-label path {
 .bookmark-link::before {
   content: "";
   position: absolute;
-  top: 11px;
+  top: 12px;
   left: 17px;
   width: 14px;
   height: 16px;
@@ -231,7 +228,7 @@ input:focus + .header-search-label path {
 .cart-link::before {
   content: "";
   position: absolute;
-  top: 11px;
+  top: 12px;
   left: 18px;
   width: 15px;
   height: 15px;
@@ -249,7 +246,7 @@ input:focus + .header-search-label path {
   opacity: 0.5;
 }
 .shop-menu .button-checkout {
-  padding: 8px 21px 11px;
+  padding: 8px 21px 10px;
   text-align: center;
   text-transform: none;
   background-color: #63a63e;
@@ -264,20 +261,22 @@ input:focus + .header-search-label path {
 .added {
   background-color: #ee3643;
 }
-
+.added:hover {
+  background-color: #ee3643;
+}
 .header-bottom {
-  padding-top: 47px;
+  padding-top: 48px;
   padding-bottom: 38px;
 }
 .header-bottom .container {
   display: flex;
-  justify-content: flex-end;
+
 }
 .shop-info {
   width: 197px;
   padding: 0;
   margin: 0;
-  margin-right: 70px;
+  margin-right: 71px;
   margin-left: 52px;
 
   font-size: 16px;
@@ -745,7 +744,7 @@ input:checked:disabled + .filter-radio {
   overflow: hidden;
   width: 300px;
   min-height: 123px;
-  padding: 20px 22px 22px 22px;
+  padding: 20px 22px 22px 24px;
   margin-bottom: 20px;
   margin-right: 20px;
 }
@@ -771,31 +770,31 @@ input:checked:disabled + .filter-radio {
   background-color: #ffbf47;
   background-image: url("../img/promo-materials.png");
   background-repeat: no-repeat;
-  background-position: 213px 31px;
+  background-position: top 31px right 43px;
 }
 .promo-tool {
   background-color: #3bbce3;
   background-image: url("../img/promo-instruments.png");
   background-repeat: no-repeat;
-  background-position: 197px 33px;
+  background-position: top 33px right 28px;
 }
 .promo-tech {
   background-color: #dc91d8;
   background-image: url("../img/promo-tech.png");
   background-repeat: no-repeat;
-  background-position: 191px 32px;
+  background-position: top 31px right 31px;
 }
 .promo-sale {
   background-color: #8ed78f;
   background-image: url("../img/promo-discount.png");
   background-repeat: no-repeat;
-  background-position: 196px 26px;
+  background-position: top 26px right 45px;
 }
 .promo-delivery {
   background-color: #ffc047;
   background-image: url("../img/promo-delivery.png");
   background-repeat: no-repeat;
-  background-position: 191px 32px;
+  background-position: top 32px right 31px;
 }
 .button-promo {
   display: block;
@@ -910,18 +909,15 @@ input:checked:disabled + .filter-radio {
   left: 25px;
   bottom: 22px;
   width: 195px;
-  padding-left: 4px;
+  padding-left: 15px;
   text-align: center;
 }
 /* СОРТИРОВКА */
 
 .sorting-block {
   display: flex;
-  padding-top: 7px;
-  padding-right: 7px;
-  padding-bottom: 6px;
-  padding-left: 18px;
-  margin-bottom: 22px;
+  padding: 7px 7px 6px 19px;
+  margin-bottom: 21px;
   background-color: #f7f3ec;
 }
 .sorting-block span {
@@ -932,6 +928,7 @@ input:checked:disabled + .filter-radio {
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
+
 }
 .sorting-block span,
 .sorting-block a {
@@ -943,7 +940,7 @@ input:checked:disabled + .filter-radio {
 }
 .sorting-list li {
   margin-right: 33px;
-  margin-left: 33px;
+  margin-left: 36px;
 }
 .sorting-list a {
   color: rgba(0, 0, 0, 0.18);
@@ -1066,7 +1063,7 @@ input:checked:disabled + .filter-radio {
 .item-sale {
   position: relative;
   width: 123px;
-  padding: 10px 15px;
+  padding: 10px 8px 10px 25px;
   margin-top: 10px;
   margin-left: 42px;
   border-radius: 3px;
@@ -1419,11 +1416,8 @@ input:checked:disabled + .filter-radio {
   margin-right: 0;
 }
 .pagination a {
-  padding-top: 10px;
-  padding-right: 15px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  border-radius: 3px;
+  padding: 8px 14px 11px 15px;
+  border-radius: 4px;
   line-height: 18px;
   text-transform: uppercase;
 
@@ -1431,8 +1425,8 @@ input:checked:disabled + .filter-radio {
   border: solid 1px #e5e5e5;
 }
 .pagination .next-page {
-  padding-left: 28px;
-  padding-right: 28px;
+  padding-left: 31px;
+  padding-right: 31px;
 }
 .pagination a:hover {
   border: 1px solid #bdc6ca;
@@ -1451,7 +1445,7 @@ input:checked:disabled + .filter-radio {
 /* О ПЕРФОРАТОРАХ */
 
 .about-drill-section {
-  padding-top: 67px;
+  padding-top: 65px;
   padding-bottom: 68px;
   background-color: #f4f7f9;
 }
@@ -1462,7 +1456,7 @@ input:checked:disabled + .filter-radio {
   margin-bottom: 0;
 }
 .about-drill-section p {
-  padding-top: 24px;
+  padding-top: 27px;
 }
 
 /* О КОМПАНИИ */
@@ -1618,14 +1612,23 @@ input:checked:disabled + .filter-radio {
   color: #ee3643;
 }
 .modal {
+  display: none;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
   font-family: "Cuprum", Arial, sans-serif;
+}
+.modal-show {
+  display: block;
 }
 
 /* ДОБАВЛЕНИЕ В КОРЗИНУ */
 
 .cart-add {
-  position: relative;
+  z-index: 20;
+  top: 412px;
   width: 620px;
   height: 282px;
   border-top: 7px solid #ee3643;
@@ -1666,6 +1669,9 @@ input:checked:disabled + .filter-radio {
   color: #000000;
   background-color: #ffffff;
 }
+.cart-bottom button:hover { /* состояние не описано в стайлгайде */
+  color: #ffffff;
+}
 .cart-bottom .button-details {
   width: 220px;
 }
@@ -1682,9 +1688,12 @@ input:checked:disabled + .filter-radio {
 }
 
 .map-big-modal {
-  position: relative;
+  z-index: 20;
+  position: fixed;
+  bottom: 355px;
   width: 940px;
   height: 446px;
+  box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
 }
 
 .modal-wrapper {
@@ -1692,7 +1701,9 @@ input:checked:disabled + .filter-radio {
   margin-left: 80px;
 }
 .feedback-modal {
-  position: relative;
+  z-index: 30;
+  position: fixed;
+  bottom: 200px;
   width: 620px;
   height: 430px;
   border-top: #ee3643 solid 7px;
@@ -1702,13 +1713,16 @@ input:checked:disabled + .filter-radio {
   justify-content: space-between;
   padding-top: 48px;
 }
+.feedback-top-block {
+  width: 220px;
+}
 .feedback-modal label {
   font-size: 18px;
   line-height: 18px;
 }
 .feedback-modal input {
   width: 220px;
-  height: 38px;
+  min-height: 38px;
   padding-left: 18px;
   margin-top: 10px;
   border: 2px solid #dee3e4;
@@ -1727,8 +1741,7 @@ input:checked:disabled + .filter-radio {
 }
 .feedback-text textarea {
   height: 114px;
-  padding-top: 9px;
-  padding-left: 16px;
+  padding: 9px 16px;
   margin-top: 10px;
   border: 2px solid #dee3e4;
   border-radius: 3px;
