@@ -834,24 +834,20 @@ input:checked:disabled+.filter-radio {
 /* ПРОМО БЛОКИ */
 
 .promo-section {
-  padding-bottom: 53px;
+  padding-bottom: 33px;
 }
 
 .promo-section .container {
   display: flex;
-  align-items: flex-start;
 }
 
 .left-column-promo {
   display: flex;
   flex-wrap: wrap;
-  width: 620px;
-  margin-right: 20px;
+  width: 640px;
 }
 
 .right-column-promo {
-  display: flex;
-  flex-direction: column;
   width: 300px;
 }
 
@@ -863,19 +859,9 @@ input:checked:disabled+.filter-radio {
   width: 300px;
   min-height: 123px;
   padding: 20px 22px 22px 22px;
-  margin-bottom: 20px;
-  margin-right: 20px;
+  margin: 0 20px 20px 0;
   background-repeat: no-repeat;
 }
-
-.left-column-promo div:nth-of-type(2n+2) {
-  margin-right: 0;
-}
-
-.right-column-promo div:last-of-type {
-  margin-bottom: 0;
-}
-
 .promo-block h3 {
   max-width: 180px;
   padding: 0;
@@ -947,6 +933,7 @@ input:checked:disabled+.filter-radio {
   position: relative;
   width: 620px;
   height: 266px;
+  margin: 0 20px 20px 0;
   background-color: #604f48;
 }
 
