@@ -1095,6 +1095,7 @@ input:checked:disabled + .filter-radio {
 .sorting-buttons a {
   margin-right: 11px;
   margin-left: 11px;
+  vertical-align: middle;
 }
 
 .sorting-up {
