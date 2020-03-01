@@ -1,5 +1,3 @@
-
-
 html {
   box-sizing: border-box;
 }
@@ -174,6 +172,7 @@ img {
   width: 270px;
   padding: 12px 15px 10px 49px;
   border: none;
+  vertical-align: top;
   background-color: #293449;
 }
 
@@ -728,6 +727,7 @@ input:focus+.header-search-label path {
   border: none;
   border-radius: 4px;
   text-align: center;
+  vertical-align: top;
   font-family: inherit;
   font-size: 17px;
 }
@@ -828,6 +828,7 @@ input:checked:disabled + .filter-radio {
   padding-bottom: 8px;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
+  vertical-align: top;
   cursor: pointer;
 }
 
@@ -2077,6 +2078,7 @@ input:checked:disabled + .filter-radio {
   margin-top: 10px;
   border: 2px solid #dee3e4;
   border-radius: 3px;
+  vertical-align: top;
   font-family: "PT Sans", Arial, sans-serif;
 }
 
